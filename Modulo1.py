@@ -20,8 +20,8 @@ def poli_taylor_expandida(x):
 
 
 def poli_horner(x):
-    acumulador = 1
-    for n in range(5, 0, -1):
+    acumulador = (1 + (1/5)*x)
+    for n in range(4, 0, -1):
         acumulador *= (1 + (1/n)*x)
     return acumulador
 
